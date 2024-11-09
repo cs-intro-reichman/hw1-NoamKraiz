@@ -27,6 +27,12 @@ public class TimeFormat {
 		if(hours<12 && minutes >10){
 			time = hours+":"+minutes+" AM";
 		}
+		if (hours == 12 && minutes<10) {
+			time = hours+":0"+minutes+" PM";
+		}
+		if (hours == 12 && minutes >10) {
+			time = hours+":"+minutes+" AM";
+		}
 		if(hours>12 && hours !=24 && minutes <10){
 			hours = hours-12;
 			time = hours+":0"+minutes+" PM";
