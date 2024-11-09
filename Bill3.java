@@ -11,7 +11,7 @@ public class Bill3 {
 		double dividdedPrice = price/3;
 		double roundPrice = Math.ceil(dividdedPrice);
 	    // System.out.println(" pay"+roundPrice+" Shekels each.");		
-	    System.out.println("Dear "+name3+", "+name2+", "+name1+": pay "+roundPrice+" Shekels each.");		
+	    System.out.println("Dear "+name3+", "+name2+" and "+name1+": pay "+roundPrice+" Shekels each.");		
 
 	}
 }
