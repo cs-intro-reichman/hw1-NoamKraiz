@@ -16,30 +16,30 @@ public class TimeFormat {
 		String time = "";
 
 		if(hours <10 && minutes <10){
-			time = "0"+hours+":0"+minutes+"AM";
+			time = "0"+hours+":0"+minutes+" AM";
 		}
 		if (hours<10 && minutes >10) {
-			time = "0"+hours+":"+minutes+"AM";
+			time = "0"+hours+":"+minutes+" AM";
 		}
 		if(hours<12 && minutes <10){
-			time = hours+":0"+minutes+"AM";
+			time = hours+":0"+minutes+" AM";
 		}
 		if(hours<12 && minutes >10){
-			time = hours+":"+minutes+"AM";
+			time = hours+":"+minutes+" AM";
 		}
 		if(hours>12 && hours !=24 && minutes <10){
 			hours = hours-12;
-			time = hours+":0"+minutes+"PM";
+			time = hours+":0"+minutes+" PM";
 		}
 		if(hours>12 && hours !=24 && minutes >10){
 			hours = hours-12;
-			time = hours+":"+minutes+"PM";
+			time = hours+":"+minutes+" PM";
 		}
 		if(hours == 24 && minutes <10){
-			time = "00:0"+minutes+"AM";
+			time = "00:0"+minutes+" AM";
 		}
 		if (hours ==24 && minutes >10){
-			time = "00:"+minutes+"AM";
+			time = "00:"+minutes+" AM";
 		}
 	System.out.println(time);
 		
