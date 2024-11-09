@@ -20,6 +20,6 @@ public class NumWords {
 			hundreds = num/100;
 		}
 
-		System.out.println(hundreds+" hundreds, "+tens+" tens, "+units+" ones.");
+		System.out.println(hundreds+" hundreds, "+tens+" tens, and "+units+" ones.");
 	}
 }
